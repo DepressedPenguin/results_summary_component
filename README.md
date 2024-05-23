@@ -1,30 +1,37 @@
-# React + TypeScript + Vite
+<h2>Main Component</h2>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p>The <code>Main</code> component serves as the primary container for displaying the result in your application. It imports and renders the <code>Result</code> component within a styled card layout.</p>
 
-Currently, two official plugins are available:
+<h2>Result Component</h2>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<p>The <code>Result</code> component presents the user's test result in a visually appealing manner. It includes various sections such as the overall score, summary of individual scores in different categories (Reaction, Memory, Verbal, Visual), and a button for continuing further actions.</p>
 
-## Expanding the ESLint configuration
+<h3>File Structure</h3>
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+<ul>
+  <li><strong>main.module.scss:</strong> This file contains the styles for the <code>Main</code> component.</li>
+  <li><strong>result.module.scss:</strong> This file contains the styles for the <code>Result</code> component.</li>
+</ul>
 
-- Configure the top-level `parserOptions` property like this:
+<h3>Dependencies</h3>
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+<ul>
+  <li>React: The library used for building user interfaces.</li>
+  <li>SCSS: The CSS preprocessor used for styling components.</li>
+</ul>
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+<h3>Usage</h3>
+
+<p>To use these components in your project:</p>
+<ol>
+  <li>Import the <code>Main</code> component where you want to display the result.</li>
+  <li>Ensure that the SCSS files are properly imported or linked in your project.</li>
+</ol>
+
+<h3>Additional Notes</h3>
+
+<ul>
+  <li>The components are designed to be responsive, adapting to different screen sizes using media queries.</li>
+  <li>Custom icons are utilized to visually represent different categories of the result.</li>
+  <li>Styling is organized using SCSS modules for better maintainability and readability.</li>
+</ul>
